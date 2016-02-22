@@ -1,0 +1,1 @@
+javac -cp lib/*:src:test:class -d class test/AnuTest.java
