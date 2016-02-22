@@ -1,3 +1,5 @@
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 class Anu {
 
@@ -19,5 +21,15 @@ class Anu {
 		   }
 		}
 		return occurrences;
+	}
+
+	public int wordCount(){
+		int occurrences = 0;
+    	String pattern = "\\w+";
+    	Pattern r = Pattern.compile(pattern);
+    	Matcher m = r.matcher(this.content);
+    	while(m.find())
+    		occurrences++;
+    	return occurrences;
 	}
 }

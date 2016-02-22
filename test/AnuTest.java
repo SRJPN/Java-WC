@@ -37,4 +37,25 @@ public class AnuTest {
 		Anu sample = new Anu(testSample);
 		assertEquals(sample.lineCount(),0);		
 	}
+
+	@Test
+	public void wordCount_gives_zero_if_empty_string_is_given(){
+		String testSample = "";
+		Anu sample = new Anu(testSample);
+		assertEquals(sample.wordCount(),0);		
+	}
+
+	@Test
+	public void wordCount_gives_the_count_of_words_in_the_given_content_with_single_line(){
+		String testSample = "Anusree is a good girl";
+		Anu sample = new Anu(testSample);
+		assertEquals(sample.wordCount(),5);		
+	}
+
+	@Test
+	public void wordCount_gives_the_count_of_words_in_the_given_content_with_multiple_line(){
+		String testSample = "Anusree is a good girl.\nShe is a budduse.\nShe is even stupid sometimes.";
+		Anu sample = new Anu(testSample);
+		assertEquals(sample.wordCount(),14);		
+	}
 }
