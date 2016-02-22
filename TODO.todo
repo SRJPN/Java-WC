@@ -1,0 +1,63 @@
+TODO
+----------------------------------------------------------------------------------
+Write a program to perform the following functions in commandline.
+
+__________________________________________________________________________________
+
+Syntax
+    > Java wc [options]... [file]...
+
+Options
+
+   -c
+   --bytes
+        Print only the byte counts.
+  
+   -m
+   --chars
+        Print the character counts.
+        
+   -w
+   --words
+        Print only the word counts.
+
+   -l
+   --lines
+        Print the count of the new lines in the file.
+
+   -L
+   --max-line-length
+        Print only the length of the longest line per file, and if there is more than one file it prints the maximum (not the sum) of those lengths. 
+
+   -a
+   --all
+        Print the output of all the functions performed by the program of the given file input.
+
+   -h
+   --help
+        Print a help message to show the usage of the program.
+
+   -v
+   --version
+        Prints the version information of the program.
+
+File
+
+  *.*
+  --all
+        Takes all files in the folder as the input and performs the function on all files to prints the requsite output.
+
+----------------------------------------------------------------------------------------------
+
+Steps
+~~~~~
+  1.  Read the file and command from the command line.
+  2.  Process the input file
+  3.  Count the byte of the file.
+        get the file in binary format and then divide the count of letters by 8.
+  4.  Count the words of the file.
+  5.  Count the characters of the file.
+  6.  Count the new lines of the file.
+  7.  Count the length of the longest line in the file.
+  8.  Prints the usage and help of the program.
+  9.  prints the version details of the program.
