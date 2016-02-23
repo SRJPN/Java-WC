@@ -5,7 +5,7 @@ class WC {
 			ReadFile text = ReadFile.addFile(file);
 			String content = text.getContent();
 			Anu anu = new Anu(content);
-			System.out.println("\t"+anu.lineCount()+"\t"+anu.wordCount()+"\t"+anu.byteCount()+"\t"+file);
+			System.out.println("\t"+anu.lineCount()+"\t"+anu.wordCount()+"\t"+anu.charCount()+"\t"+file);
 		}	
 	}
 }

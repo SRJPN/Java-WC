@@ -1,5 +1,6 @@
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.io.UnsupportedEncodingException;
 
 class Anu {
 
@@ -9,7 +10,7 @@ class Anu {
 		this.content = content;
 	}
 	
-	public int byteCount(){
+	public int charCount(){
 		return this.content.length();
 	}
 
@@ -21,6 +22,17 @@ class Anu {
 		   }
 		}
 		return occurrences;
+	}
+
+	public int byteCount(){
+		byte[] utf8Bytes = {};
+		try{
+			utf8Bytes = this.content.getBytes("UTF-8");
+		}
+		catch(UnsupportedEncodingException err){
+			System.out.println("ERROR.....!");
+		}
+		return utf8Bytes.length;
 	}
 
 	public int wordCount(){
