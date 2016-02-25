@@ -1,35 +1,35 @@
-import org.apache.commons.cli.CommandLine;
-
 class WC {
-	public static void main(String[] args) {
-		Cli cli = new Cli(args);
-		CommandLine cmds;
-		try{
-			cmds = cli.parse();
-			String[] files = cmds.getArgs();
-			String[] resultEach = processFiles(files, cmds);
-			for(String s : resultEach)
-				System.out.println(s);
-		}
-		catch (Exception e){
-			cli.help();
-			System.exit(0);
-		}
-	}
+    public static void main(String[] args) {
+        Cli cli = new Cli(args);
+        try {
+            String[] files = cli.getFiles();
+            String cmds = cli.getOptions();
+            String[] report = processFiles(files, cmds);
+            for (String file : report) {
+                System.out.println(file);
+            }
+        } catch (Exception e) {
+            System.out.println(e.fillInStackTrace());
+            cli.help();
+            System.exit(0);
+        }
+    }
 
-	private static String[] processFiles(String[] files, CommandLine options){
-		String[] result = new String[files.length];
-		for(int i=0; i<files.length; i++){
-			ReadFile text = ReadFile.addFile(files[i]);
-			String content = text.getContent();
-			Anu anu = new Anu(content);
-			
-			result[i] = processFile(anu, options)+" "+files[i];
-		}	
-		return result;
-	}
+    private static String[] processFiles(String[] files, String options) {
+        int length = files.length > 1 ? files.length + 1 : files.length;
+        String[] result = new String[length];
+        HandleFiles handler = new HandleFiles();
+        for (int i = 0; i < files.length; i++) {
+            result[i] = processFile(files[i], options, handler);
+        }
+        if (files.length > 1)
+            result[length - 1] = handler.generateTotal(options);
+        return result;
+    }
 
-	private static String processFile(Anu anu, CommandLine options){
-			return "\t"+anu.lineCount()+"\t"+anu.wordCount()+"\t"+anu.charCount();
-	}
+    private static String processFile(String file, String options, HandleFiles handler) {
+        String content = ReadFile.addFile(file).getContent();
+        FileContentPair fileContentPair = new FileContentPair(file, content);
+        return handler.generateResult(fileContentPair, options);
+    }
 }

@@ -18,7 +18,7 @@ class ReadFile {
 			self.read();
 		}
 		catch(FileNotFoundException err){
-			System.out.println("ERROR.... File Not Found");
+			System.out.println("ERROR.... File Not Found "+file);
 		}
 		catch(IOException err){
 			System.out.println("Oops... The File can't be read...");

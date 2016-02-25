@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f044cfb3-87c4-44ce-ae49-0e81a875dbfb" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/test/Java-WC/HandleFilesTest.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/Java-WC/HandleFiles.class" afterPath="$PROJECT_DIR$/out/production/Java-WC/HandleFiles.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/HandleFiles.java" afterPath="$PROJECT_DIR$/src/HandleFiles.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/HandleFilesTest.java" afterPath="$PROJECT_DIR$/test/HandleFilesTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Cli.java" afterPath="$PROJECT_DIR$/src/Cli.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ReadFile.java" afterPath="$PROJECT_DIR$/src/ReadFile.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/WC.java" afterPath="$PROJECT_DIR$/src/WC.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/CliTest.java" afterPath="$PROJECT_DIR$/test/CliTest.java" />
     </list>
     <ignored path="Java-WC.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,7 +23,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Java-WC$All_in_Java_WC.coverage" NAME="All in Java-WC Coverage Results" MODIFIED="1456400470924" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/Java-WC$All_in_Java_WC.coverage" NAME="All in Java-WC Coverage Results" MODIFIED="1456402257919" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -34,6 +34,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+      <file leaf-file-name="WC.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/WC.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.8888889">
+              <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="HandleFiles.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/HandleFiles.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -44,36 +54,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Cli.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Cli.java">
+      <file leaf-file-name="FileContentPair.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/FileContentPair.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+              <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CliTest.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/CliTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6629002">
-              <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HandleFilesTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test/HandleFilesTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="72" column="34" selection-start-line="72" selection-start-column="34" selection-end-line="72" selection-end-column="34" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -82,7 +68,7 @@
         <entry file="file://$PROJECT_DIR$/src/ReadFile.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+              <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -109,9 +95,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Cli.java" />
-        <option value="$PROJECT_DIR$/src/WC.java" />
-        <option value="$PROJECT_DIR$/test/CliTest.java" />
         <option value="$PROJECT_DIR$/src/FileContentPair.java" />
         <option value="$PROJECT_DIR$/test/AnuTest.java" />
         <option value="$PROJECT_DIR$/test/FileContentPairTest.java" />
@@ -119,6 +102,10 @@
         <option value="$PROJECT_DIR$/wc" />
         <option value="$PROJECT_DIR$/test/HandleFilesTest.java" />
         <option value="$PROJECT_DIR$/src/HandleFiles.java" />
+        <option value="$PROJECT_DIR$/src/Cli.java" />
+        <option value="$PROJECT_DIR$/test/CliTest.java" />
+        <option value="$PROJECT_DIR$/src/ReadFile.java" />
+        <option value="$PROJECT_DIR$/src/WC.java" />
       </list>
     </option>
   </component>
@@ -228,15 +215,51 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.All in Java-WC">
-    <configuration default="false" name="HandleFilesTest.it_gives_total_of_all_files_dealt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.WC">
+    <configuration default="false" name="WC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="WC" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="-c ./sample_test_files/sample.txt ./sample_test_files/empty.txt" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="Java-WC" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="All in Java-WC" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Java-WC" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="HandleFilesTest" />
-      <option name="METHOD_NAME" value="it_gives_total_of_all_files_dealt" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="CliTest.it_gives_a_string_of_all_cmds" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="Java-WC" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="CliTest" />
+      <option name="METHOD_NAME" value="it_gives_a_string_of_all_cmds" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -250,34 +273,13 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="HandleFilesTest.it_gives_zero_for_no_files_dealt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="CliTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Java-WC" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="HandleFilesTest" />
-      <option name="METHOD_NAME" value="it_gives_zero_for_no_files_dealt" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="HandleFilesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="Java-WC" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="HandleFilesTest" />
+      <option name="MAIN_CLASS_NAME" value="CliTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -292,36 +294,15 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="HandleFilesTest.it_gives_total_of_all_the_files_dealt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="CliTest.cli_says_no_for_asked_command_is_not_present" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Java-WC" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="HandleFilesTest" />
-      <option name="METHOD_NAME" value="it_gives_total_of_all_the_files_dealt" />
+      <option name="MAIN_CLASS_NAME" value="CliTest" />
+      <option name="METHOD_NAME" value="cli_says_no_for_asked_command_is_not_present" />
       <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="All in Java-WC" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="Java-WC" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="package" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -591,19 +572,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.HandleFilesTest.it_gives_total_of_all_files_dealt" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.HandleFilesTest.it_gives_zero_for_no_files_dealt" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.HandleFilesTest" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.HandleFilesTest.it_gives_total_of_all_the_files_dealt" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.All in Java-WC" />
+      <item index="0" class="java.lang.String" itemvalue="Application.WC" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.All in Java-WC" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.CliTest.it_gives_a_string_of_all_cmds" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.CliTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.CliTest.cli_says_no_for_asked_command_is_not_present" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.All in Java-WC" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.HandleFilesTest.it_gives_total_of_all_the_files_dealt" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.HandleFilesTest" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.HandleFilesTest.it_gives_zero_for_no_files_dealt" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.HandleFilesTest.it_gives_total_of_all_files_dealt" />
+        <item index="0" class="java.lang.String" itemvalue="Application.WC" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.All in Java-WC" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.CliTest.cli_says_no_for_asked_command_is_not_present" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.CliTest" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.CliTest.it_gives_a_string_of_all_cmds" />
       </list>
     </recent_temporary>
   </component>
@@ -621,20 +602,23 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_Java-WC - 2016.02.25 at 17h 11m 12s.xml">
-      <configuration name="All in Java-WC" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="All_in_Java-WC - 2016.02.25 at 17h 17m 51s.xml">
-      <configuration name="All in Java-WC" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="All_in_Java-WC - 2016.02.25 at 17h 40m 52s.xml">
       <configuration name="All in Java-WC" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HandleFilesTest_it_gives_total_of_all_files_dealt - 2016.02.25 at 17h 30m 03s.xml">
-      <configuration name="HandleFilesTest.it_gives_total_of_all_files_dealt" configurationId="JUnit" />
+    <history-entry file="All_in_Java-WC - 2016.02.25 at 17h 40m 59s.xml">
+      <configuration name="All in Java-WC" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="HandleFilesTest_it_gives_total_of_all_files_dealt - 2016.02.25 at 17h 33m 00s.xml">
-      <configuration name="HandleFilesTest.it_gives_total_of_all_files_dealt" configurationId="JUnit" />
+    <history-entry file="All_in_Java-WC - 2016.02.25 at 19h 42m 17s.xml">
+      <configuration name="All in Java-WC" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CliTest_cli_says_no_for_asked_command_is_not_present - 2016.02.25 at 19h 27m 06s.xml">
+      <configuration name="CliTest.cli_says_no_for_asked_command_is_not_present" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CliTest_it_gives_a_string_of_all_cmds - 2016.02.25 at 19h 16m 14s.xml">
+      <configuration name="CliTest.it_gives_a_string_of_all_cmds" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="CliTest_it_gives_a_string_of_all_cmds - 2016.02.25 at 19h 16m 23s.xml">
+      <configuration name="CliTest.it_gives_a_string_of_all_cmds" configurationId="JUnit" />
     </history-entry>
     <history-entry file="HandleFilesTest_it_gives_total_of_all_the_files_dealt - 2016.02.25 at 17h 36m 35s.xml">
       <configuration name="HandleFilesTest.it_gives_total_of_all_the_files_dealt" configurationId="JUnit" />
@@ -644,9 +628,6 @@
     </history-entry>
     <history-entry file="HandleFilesTest_it_gives_total_of_all_the_files_dealt - 2016.02.25 at 17h 37m 59s.xml">
       <configuration name="HandleFilesTest.it_gives_total_of_all_the_files_dealt" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="HandleFilesTest_it_gives_zero_for_no_files_dealt - 2016.02.25 at 17h 33m 41s.xml">
-      <configuration name="HandleFilesTest.it_gives_zero_for_no_files_dealt" configurationId="JUnit" />
     </history-entry>
     <history-entry file="HandleFilesTest_it_gives_zero_for_no_files_dealt - 2016.02.25 at 17h 33m 49s.xml">
       <configuration name="HandleFilesTest.it_gives_zero_for_no_files_dealt" configurationId="JUnit" />
@@ -662,12 +643,12 @@
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32893157" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893157" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893157" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893157" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32893157" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24969475" sideWeight="0.4883721" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24969475" sideWeight="0.4883721" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -711,28 +692,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Anu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13664596">
-          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/src.zip!/java/util/regex/MatchResult.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33291924">
           <caret line="39" column="17" selection-start-line="39" selection-start-column="17" selection-end-line="39" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/FileContentPair.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.70433146">
-          <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
           <folding />
         </state>
       </provider>
@@ -755,14 +718,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ReadFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/wc">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -779,21 +734,49 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/WC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7378882">
-          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/HandleFilesTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.78136647">
           <caret line="72" column="34" selection-start-line="72" selection-start-column="34" selection-end-line="72" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Cli.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="43" column="4" selection-start-line="43" selection-start-column="4" selection-end-line="46" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/CliTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="40" selection-start-line="21" selection-start-column="40" selection-end-line="21" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Anu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FileContentPair.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="12" selection-start-line="25" selection-start-column="12" selection-end-line="25" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -805,21 +788,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Cli.java">
+    <entry file="file://$PROJECT_DIR$/src/ReadFile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/CliTest.java">
+    <entry file="file://$PROJECT_DIR$/src/WC.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6629002">
-          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.8888889">
+          <caret line="26" column="12" selection-start-line="26" selection-start-column="12" selection-end-line="26" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
