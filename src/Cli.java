@@ -2,7 +2,7 @@ import org.apache.commons.cli.*;
 
 public class Cli {
     private String[] args = null;
-    private Options options = new Options();
+    private final Options options = new Options();
     private CommandLine parsedObj = null;
 
     public Cli(String[] args) {
@@ -25,8 +25,8 @@ public class Cli {
         this.parse();
         String result = "";
         Option[] options = parsedObj.getOptions();
-        for (int i = 0; i < options.length; i++) {
-            result = result.concat(options[i].getOpt());
+        for (Option option : options) {
+            result = result.concat(option.getOpt());
         }
         return  result;
     }
@@ -50,6 +50,5 @@ public class Cli {
         // This prints out some help
         HelpFormatter formater = new HelpFormatter();
         formater.printHelp("Wc", options);
-        options.getOptions().toArray();
     }
 }

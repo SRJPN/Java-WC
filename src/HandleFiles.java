@@ -1,6 +1,5 @@
 class HandleFiles {
-    FileContentPair file;
-    int totalByteCount, totalWordCount, totalLineCount;
+    private int totalByteCount, totalWordCount, totalLineCount;
 
     public HandleFiles(){
         this.totalByteCount = 0;
@@ -8,24 +7,24 @@ class HandleFiles {
         this.totalWordCount = 0;
     }
 
-    public String generateResult(FileContentPair file, String cmds){
+    public String generateResult(FileContentPair file, String commands){
         String result = "\t";
         int temp;
-        if(cmds.length()==0) {
-            cmds = "lwc";
+        if(commands.length()==0) {
+            commands = "lwc";
         }
 
-        if (cmds.indexOf("l")>=0){
+        if (commands.contains("l")){
             temp = file.lineCount();
             totalLineCount+=temp;
             result = result.concat(Integer.toString(temp)+"\t");
         }
-        if (cmds.indexOf("w")>=0){
+        if (commands.contains("w")){
             temp = file.wordCount();
             totalWordCount+=temp;
             result = result.concat(Integer.toString(temp)+"\t");
         }
-        if (cmds.indexOf("c")>=0) {
+        if (commands.contains("c")) {
             temp = file.byteCount();
             totalByteCount += temp;
             result = result.concat(Integer.toString(temp)+"\t");
@@ -38,11 +37,11 @@ class HandleFiles {
         if(cmds.length()==0) {
             cmds = "lwc";
         }
-        if(cmds.indexOf("l")>=0)
+        if(cmds.contains("l"))
             result = result.concat(Integer.toString(totalLineCount)+"\t");
-        if(cmds.indexOf("w")>=0)
+        if(cmds.contains("w"))
             result = result.concat(Integer.toString(totalWordCount)+"\t");
-        if(cmds.indexOf("c")>=0)
+        if(cmds.contains("c"))
             result = result.concat(Integer.toString(totalByteCount)+"\t");
         return result.concat("Total");
     }

@@ -3,15 +3,14 @@ class WC {
         Cli cli = new Cli(args);
         try {
             String[] files = cli.getFiles();
-            String cmds = cli.getOptions();
-            String[] report = processFiles(files, cmds);
+            String commands = cli.getOptions();
+            String[] report = processFiles(files, commands);
             for (String file : report) {
                 System.out.println(file);
             }
         } catch (Exception e) {
-            System.out.println(e.fillInStackTrace());
+            System.out.println(e.toString());
             cli.help();
-            System.exit(0);
         }
     }
 

@@ -1,6 +1,6 @@
 class FileContentPair {
-	String file;
-	Anu content;
+	private final String file;
+	private final Anu content;
 	
 	FileContentPair(String file, String content){
 		this.file = file;

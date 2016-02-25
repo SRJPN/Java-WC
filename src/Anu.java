@@ -4,7 +4,7 @@ import java.io.UnsupportedEncodingException;
 
 class Anu {
 
-    String content;
+    private final String content;
 
     public Anu(String content) {
         this.content = content;

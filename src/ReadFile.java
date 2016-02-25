@@ -2,8 +2,9 @@ import java.io.*;
 
 class ReadFile {
 
-	private String fileName, content;
-	FileInputStream file;
+	private final String fileName;
+	private String content;
+	private FileInputStream file;
 
 	private ReadFile(String file){
 		this.fileName = file;
