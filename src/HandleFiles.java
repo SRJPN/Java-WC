@@ -1,8 +1,14 @@
 class HandleFiles {
-    static FileContentPair file;
-    static int totalByteCount, totalWordCount, totalLineCount;
+    FileContentPair file;
+    int totalByteCount, totalWordCount, totalLineCount;
 
-    public static String generateResult(FileContentPair file, String cmds){
+    public HandleFiles(){
+        this.totalByteCount = 0;
+        this.totalLineCount = 0;
+        this.totalWordCount = 0;
+    }
+
+    public String generateResult(FileContentPair file, String cmds){
         String result = "\t";
         int temp;
         if(cmds.length()==0) {
@@ -25,5 +31,19 @@ class HandleFiles {
             result = result.concat(Integer.toString(temp)+"\t");
         }
         return result.concat(file.getFile());
+    }
+
+    public String generateTotal(String cmds){
+        String result = "\t";
+        if(cmds.length()==0) {
+            cmds = "lwc";
+        }
+        if(cmds.indexOf("l")>=0)
+            result = result.concat(Integer.toString(totalLineCount)+"\t");
+        if(cmds.indexOf("w")>=0)
+            result = result.concat(Integer.toString(totalWordCount)+"\t");
+        if(cmds.indexOf("c")>=0)
+            result = result.concat(Integer.toString(totalByteCount)+"\t");
+        return result.concat("Total");
     }
 }
