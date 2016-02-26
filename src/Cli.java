@@ -41,11 +41,6 @@ public class Cli {
         return this.parsedObj.hasOption(a);
     }
 
-//    public boolean hasOption(char a) throws ParseException{
-//        String temp = new String(a);
-//        return this.hasOption(temp);
-//    }
-
     public void help() {
         // This prints out some help
         HelpFormatter formater = new HelpFormatter();

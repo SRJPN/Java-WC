@@ -1,1 +1,0 @@
-./runAll.sh && javac -cp class:lib/*:src -d class src/WC.java
