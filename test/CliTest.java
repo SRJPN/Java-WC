@@ -2,11 +2,11 @@ import org.apache.commons.cli.ParseException;
 import org.apache.commons.cli.UnrecognizedOptionException;
 import org.junit.Test;
 
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
+
 import static org.junit.Assert.*;
 
-/**
- * Created by soorajp on 25/02/16.
- */
 public class CliTest {
     @Test
     public void it_parses_the_commads_and_says_yes_of_no_for_asked_commad_is_present_or_not() throws ParseException{
@@ -48,5 +48,20 @@ public class CliTest {
         String[] sampleArgs = {"-w","-c"};
         Cli sample = new Cli(sampleArgs);
         assertEquals("wc",sample.getOptions());
+    }
+
+    @Test
+    public void it_prints_formatted_help_text() throws ParseException {
+        ByteArrayOutputStream outContent = new ByteArrayOutputStream();
+        System.setOut(new PrintStream(outContent));
+        String[] sampleArgs = {"-w","-c"};
+        Cli sample = new Cli(sampleArgs);
+        sample.help();
+        assertEquals("usage: Wc\n" +
+                " -a,--char   Show all\n" +
+                " -c,--char   Show Character count\n" +
+                " -h,--help   Show help\n" +
+                " -l,--char   Show Line count\n" +
+                " -w,--char   Show Word count\n",outContent.toString());
     }
 }

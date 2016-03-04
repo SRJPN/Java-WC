@@ -32,16 +32,16 @@ class HandleFiles {
         return result.concat(file.getFile());
     }
 
-    public String generateTotal(String cmds){
+    public String generateTotal(String commands){
         String result = "\t";
-        if(cmds.length()==0) {
-            cmds = "lwc";
+        if(commands.length()==0) {
+            commands = "lwc";
         }
-        if(cmds.contains("l"))
+        if(commands.contains("l"))
             result = result.concat(Integer.toString(totalLineCount)+"\t");
-        if(cmds.contains("w"))
+        if(commands.contains("w"))
             result = result.concat(Integer.toString(totalWordCount)+"\t");
-        if(cmds.contains("c"))
+        if(commands.contains("c"))
             result = result.concat(Integer.toString(totalByteCount)+"\t");
         return result.concat("Total");
     }

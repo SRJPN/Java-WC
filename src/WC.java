@@ -1,10 +1,11 @@
 class WC {
     public static void main(String[] args) {
+        WC wc =  new WC();
         Cli cli = new Cli(args);
         try {
             String[] files = cli.getFiles();
             String commands = cli.getOptions();
-            String[] report = processFiles(files, commands);
+            String[] report = wc.processFiles(files, commands);
             for (String file : report) {
                 System.out.println(file);
             }
@@ -14,7 +15,7 @@ class WC {
         }
     }
 
-    private static String[] processFiles(String[] files, String options) {
+    private String[] processFiles(String[] files, String options) {
         int length = files.length > 1 ? files.length + 1 : files.length;
         String[] result = new String[length];
         HandleFiles handler = new HandleFiles();
@@ -26,7 +27,7 @@ class WC {
         return result;
     }
 
-    private static String processFile(String file, String options, HandleFiles handler) {
+    private String processFile(String file, String options, HandleFiles handler) {
         String content = ReadFile.addFile(file).getContent();
         FileContentPair fileContentPair = new FileContentPair(file, content);
         return handler.generateResult(fileContentPair, options);
